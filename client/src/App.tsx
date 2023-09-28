@@ -1,11 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Game from "./components/game/Game";
+import Header from "./components/Header/Header";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+const App: React.FC = () => {
+   return (
+      <div className="App">
+         <Header />
+         <Game />
+      </div>
+   );
+};
 
 export default App;
