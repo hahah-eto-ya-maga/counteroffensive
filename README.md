@@ -21,14 +21,14 @@
 Все команды нужно запускать в терминале в корневой папке проекта и при запущенном Docker Desktop
 
 <a name="build"></a>
-### Сборка (Терминал)
+## Сборка (Терминал)
 ```bash
 docker compose build
 ```
 ![Пример сборки проекта](documents/images/readme/cmd-build-example.jpg)
 
 <a name="up"></a>
-### Запуск собранного проекта
+## Запуск собранного проекта
 + Терминал
 ```bash
 docker compose up -d
@@ -38,7 +38,7 @@ docker compose up -d
 ![Пример запуска проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-up-example.jpg)
 
 <a name="restart"></a>
-### Перезапуск проекта
+## Перезапуск проекта
 + Терминал
 ```bash
 docker compose restart
@@ -48,7 +48,7 @@ docker compose restart
 ![Пример перезапуска проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-restart-example.jpg)
 
 <a name="stop"></a>
-### Остановка запущенного проекта
+## Остановка запущенного проекта
 + Терминал
 ```bash
 docker compose stop
