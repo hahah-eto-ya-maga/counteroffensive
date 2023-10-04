@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   database:
-    image: mysql:latest
+    image: mysql:8.0
     restart: on-failure
     environment:
       - "MYSQL_USER=admin"
@@ -32,7 +32,7 @@ services:
       - "./client:/code"
 
   phpmyadmin:
-    image: phpmyadmin
+    image: phpmyadmin:latest
     restart: always
     ports:
       - "${PMA_EXTERNAL_PORT:-8081}:80"
