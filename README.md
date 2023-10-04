@@ -1,3 +1,36 @@
-# counteroffensive
+# Игра Контрнаступ (ContrNastup)
+Браузерный 2д шутер про танки.
 
-Макеты - https://www.figma.com/file/1h9XR35UihVopCELC6BORq/%D0%9A%D0%9E%D0%9D%D0%A2%D0%A0%D0%A5%D0%A0%D0%AE%D0%9A?type=design&mode=design&t=VQI1hE4eck6cjZDW-1
+## Требуемые программы
+Docker и дополнение Docker Compose
+
+## Запуск проекта
+Все команды нужно запускать в терминале в корневой папке проекта и при запущенном Docker Desktop
+
+### Сборка
+```bash
+docker compose build
+```
+
+### Запуск собранного проекта
+```bash
+docker compose up -d
+```
+
+### Перезапуск проекта
+```bash
+docker compose restart
+```
+
+### Остановка запущенного проекта
+```bash
+docker compose stop
+```
+
+## Использование проекта (информация по каждому контейнеру находится в папке documents. В скобочках файл с инструкцией)
+Проект содержит 5 конейтеров:
+1. database - База данных - MySQL (DB.md)
+2. api - PHP server (SERVER.md, API.md)
+3. client - React приложение (CLIENT.md)
+4. phpmyadmin - PMA - Клиент для работы с БД (PMA.md)
+5. web_server - Nginx (WEBSERVER.md)
