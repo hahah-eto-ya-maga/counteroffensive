@@ -1,4 +1,4 @@
-# Документ с информацией о работе с PHP сервером (API)
+# Иинформациея о PHP сервере (API)
 ## Оглавление
 + [Docker Desktop](#docker-desktop)
 + [Запуск](#start)
@@ -11,10 +11,6 @@
 <a name="docker-desktop"></a>
 ## Docker Desktop
 Контейнер называется **api** (*counteroffensive-api*)
-
-<a name="start"></a>
-## Запуск
-Этот контейнер запускается вместе со всеми контейнерами и не требует перезапуска для обновления кода
 
 <a name="browser-connection"></a>
 ## Подключение через браузер
