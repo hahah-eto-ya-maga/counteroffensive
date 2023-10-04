@@ -35,7 +35,7 @@ docker compose up -d
 ```
 ![Пример запуска проекта](documents/images/readme/cmd-up-example.jpg)
 + Docker Desktop
-![Пример запуска проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-up-main-menu-example.jpg)
+![Пример запуска проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-up-example.jpg)
 
 <a name="restart"></a>
 ### Перезапуск проекта
@@ -45,7 +45,7 @@ docker compose restart
 ```
 ![Пример перезапуска проекта](documents/images/readme/cmd-restart-example.jpg)
 + Docker Desktop
-![Пример перезапуска проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-restart-main-menu-example.jpg)
+![Пример перезапуска проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-restart-example.jpg)
 
 <a name="stop"></a>
 ### Остановка запущенного проекта
@@ -55,7 +55,7 @@ docker compose stop
 ```
 ![Пример остановки проекта](documents/images/readme/cmd-stop-example.jpg)
 + Docker Desktop
-![Пример остановки проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-stop-main-menu-example.jpg)
+![Пример остановки проекта в главном меню Docker Desktop](documents/images/readme/docker-desktop-stop-example.jpg)
 
 <a name="log"></a>
 ## Лог
