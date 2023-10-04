@@ -37,7 +37,7 @@ services:
     volumes:
       - "./client:/code"
 
-  phpmyadmin:
+  pma:
     image: phpmyadmin:latest
     restart: always
     ports:
@@ -55,10 +55,12 @@ services:
     restart: always
     volumes:
       - "./client/build/:/etc/nginx/src/"
+      - "./server/db_files:/etc/nginx/db_files"
       - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
       - "./nginx/mime.type:/etc/nginx/mime.type"
     ports:
       - "${NGINX_EXTERNAL_PORT:-80}:80"
+    working_dir: /etc/nginx/
     networks:
       - general
 

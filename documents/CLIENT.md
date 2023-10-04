@@ -1,4 +1,4 @@
-# Информацией о клиенте
+# Информацией о клиенте (React)
 
 <a name="docker-desktop"></a>
 ## Docker Desktop
