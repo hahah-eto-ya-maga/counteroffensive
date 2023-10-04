@@ -18,6 +18,7 @@
 ## Подлючение через браузер
 + [http://localhost/api/](http://localhost/api/) (Поключение с через Nginx)
 + [http://localhost:8080/](http://localhost:8080/)
+![Пример подкключения к API через браузер](images/api/browser-api-connect-example.jpg)
 <a name="dev"></a>
 ## Разработка
 + Вся разработка ведётся в папке **server**. Это общая папка с контейнером. 
