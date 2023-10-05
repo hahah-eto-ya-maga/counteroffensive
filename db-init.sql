@@ -50,8 +50,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   -- Количество опыта
   `token` VARCHAR(100) NOT NULL DEFAULT "", 
   -- Токен куки. Это строка, которая выдаётся пользователю после авторизации по паролю и хранится в куки браузера. Хранится в шифровании sha256
-  `tokenCreate` DATETIME NOT NULL DEFAULT "2000-10-01 00:00:00",
-  -- Время создания токена, чтобы пользователь авторизировался через некоторое время
+  `tokenLastUse` DATETIME NOT NULL DEFAULT "2000-10-01 00:00:00",
+  -- Время последнего использования токена, чтобы пользователь авторизировался через некоторое время
   `timeCreate` DATETIME NOT NULL DEFAULT "2000-10-01 00:00:00", 
   -- Время создания аккаунта
   `photo` VARCHAR(100) NOT NULL DEFAULT "default.jpg",
