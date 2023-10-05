@@ -2,7 +2,7 @@
 ## Оглавление
 + [Docker Desktop](#docker-desktop)
 + [Подключение через браузер](#browser-connection)
-+ [Поключение через сторонние приложения](#other-connection)
++ [Подключение через сторонние приложения](#other-connection)
 + [Таблицы](#tables)
 	+ [users](#table-users)
 	+ [games](#table-games)
