@@ -5,6 +5,7 @@ body {
 
   color: var(--black);
   background: var(--gradient);
+  border: 10px solid var(--yellow);
 
   font-family: "Cranberry Cyr", sans-serif;
 }
