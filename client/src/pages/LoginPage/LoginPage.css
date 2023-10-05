@@ -1,0 +1,23 @@
+.loginblock {
+  padding: 30px;
+  height: calc(100vh - 80px);
+  border: 10px solid var(--yellow);
+}
+
+.loginheader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.loginfooter {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 65px;
+  bottom: 65px;
+}
+
+.join_button {
+  width: 60vw;
+}

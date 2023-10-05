@@ -1,13 +1,9 @@
 import React from "react";
-import Game from "./components/game/Game";
-import Header from "./components/Header/Header";
-import "./App.css";
+import "./styles/global.css";
 
 const App: React.FC = () => {
    return (
       <div className="App">
-         <Header />
-         <Game />
       </div>
    );
 };
