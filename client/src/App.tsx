@@ -1,14 +1,17 @@
 import React from "react";
-import Game from "./components/game/Game";
-import Header from "./components/Header/Header";
+import { useServer } from "./modules";
+import { HOST } from "./config";
+import { ServerContext } from "./context";
+
 import "./App.css";
 
 const App: React.FC = () => {
+   const server = useServer(HOST);
+
    return (
-      <div className="App">
-         <Header />
-         <Game />
-      </div>
+      <ServerContext.Provider value={server}>
+
+      </ServerContext.Provider>
    );
 };
 
