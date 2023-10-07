@@ -1,5 +1,6 @@
-import Login from './login/Login';
-import SignIn from './signin/SignIn';
-import { Button } from './UI';
+import Login from "./login/Login";
+import SignIn from "./signin/SignIn";
+import ProgressBar from "./ProgressBar/ProgressBar";
 
-export { Login, Button, SignIn };
+export { Login, SignIn, ProgressBar };
+export { Button, Logo, Input } from "./UI";

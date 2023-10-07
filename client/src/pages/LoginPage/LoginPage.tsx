@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Login } from "../../components";
+
 import "./LoginPage.css";
 
 const LoginPage: React.FC = () => {
@@ -10,7 +11,7 @@ const LoginPage: React.FC = () => {
           <Button appearance="primary">Авторизация</Button>
           <Button appearance="primary">Вернуться в меню</Button>
         </div>
-        <Login></Login>
+        <Login />
         <div className="loginfooter">
           <Button className="join_button" appearance="primary">
             Войти в Бахмут
