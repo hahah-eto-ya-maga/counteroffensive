@@ -1,3 +1,4 @@
 *env*
 ssl/
 db/
+server/db_files
