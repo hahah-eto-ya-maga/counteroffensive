@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import { TUserData } from "../../interfaces/TUserData";
+import { IUserData } from "../../modules/Server/types";
 import "./Login.css";
 
 const Login: React.FC = () => {
-  const [userData, setUserData] = useState<TUserData>({
+  const [userData, setUserData] = useState<IUserData>({
     login: "",
     password: "",
   });
 
- const onChangeHandler = (
-   e: React.ChangeEvent<HTMLInputElement>,
-   data: string
- ) => {
-   setUserData({ ...userData, [data]: e.target.value });
- };
+  const onChangeHandler = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    data: string
+  ) => {
+    setUserData({ ...userData, [data]: e.target.value });
+  };
 
   return (
-    <div>
+    <>
       <div className="input_box">
         <div className="input_text">
           <span className="span_text">Логин</span>
@@ -43,7 +43,7 @@ const Login: React.FC = () => {
           }}
         />
       </div>
-    </div>
+    </>
   );
 };
 

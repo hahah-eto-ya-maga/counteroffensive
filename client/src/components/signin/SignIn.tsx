@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { TUserData } from "../../interfaces/TUserData";
+import { IUserData } from "../../modules/Server/types";
 
 const SignIn: React.FC = () => {
-  const [userData, setUserData] = useState<TUserData>({
+  const [userData, setUserData] = useState<IUserData>({
     login: "",
     password: "",
+    passwordTwo: "",
   });
 
   const onChangeHandler = (
@@ -26,19 +27,6 @@ const SignIn: React.FC = () => {
           value={userData.login}
           onChange={(e) => {
             onChangeHandler(e, "login");
-          }}
-        />
-      </div>
-      <div className="input_box">
-        <div className="input_text">
-          <span className="span_text">Имя в игре</span>
-        </div>
-        <input
-          className="input_value"
-          type="text"
-          value={userData.nickname}
-          onChange={(e) => {
-            onChangeHandler(e, "nickname");
           }}
         />
       </div>

@@ -1,16 +1,16 @@
-.login_block {
+.signin_block {
   padding: 30px;
   height: 90%;
 }
 
-.login_header {
+.signin_header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   height: 20%;
 }
 
-.login_footer {
+.signin_footer {
   display: flex;
   justify-content: flex-end;
   height: 20%;

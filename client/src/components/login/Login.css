@@ -11,6 +11,7 @@
   align-items: center;
   width: 16vw;
   border: 5px solid var(--black);
+  border-right: none;
   background: var(--green-yellow);
 }
 
