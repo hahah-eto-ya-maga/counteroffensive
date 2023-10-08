@@ -1,9 +1,9 @@
 .button {
   font-family: Cranberry Cyr;
-  font-size: 4vw;
-  font-style: normal;
+  font-size: 3.5vw;
   line-height: normal;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
   padding: 10px;
   cursor: pointer;

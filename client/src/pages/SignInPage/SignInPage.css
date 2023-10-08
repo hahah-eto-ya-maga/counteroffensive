@@ -1,23 +1,16 @@
-.login_block {
+.signin_block {
   padding: 30px;
   height: 90%;
 }
 
-.login_header {
+.signin_header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   height: 20%;
 }
 
-.login_header_button{
-  display: flex;
-  align-items: center;
-  max-width: 460px;
-  height: 150px;
-}
-
-.login_footer {
+.signin_footer {
   display: flex;
   justify-content: flex-end;
   height: 20%;
@@ -25,12 +18,10 @@
 
 .join_button {
   width: 60vw;
-  max-width: 1000px;
 }
 
 .main_content{
-  padding-top: 60px;
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	height: 60%;
 }
