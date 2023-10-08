@@ -1,0 +1,27 @@
+.signin_block {
+  padding: 30px;
+  height: 90%;
+}
+
+.signin_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 20%;
+}
+
+.signin_footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+}
+
+.join_button {
+  width: 60vw;
+}
+
+.main_content{
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+}

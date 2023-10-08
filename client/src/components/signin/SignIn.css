@@ -1,0 +1,29 @@
+.input_box {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  height: 5vw;
+  margin: 20px;
+}
+
+.input_text {
+  display: flex;
+  align-items: center;
+  width: 16vw;
+  border: 5px solid var(--black);
+  background: var(--green-yellow);
+}
+
+.input_value {
+  display: flex;
+  height: 100%;
+  outline: none;
+  width: 42vw;
+  border: 5px solid var(--black);
+  background: var(--salad);
+  font-size: 4vw;
+}
+
+.span_text {
+	font-size: 0.1vw;
+}
