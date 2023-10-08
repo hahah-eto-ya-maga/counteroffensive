@@ -6,7 +6,7 @@ interface ICardAdviceProps {
 }
 
 const CardAdvise: React.FC<ICardAdviceProps> = ({ advise }) => {
-   return <div className={"card_advise"}>{advise}</div>;
+   return <div className="card_advise">{advise}</div>;
 };
 
 export default CardAdvise;
