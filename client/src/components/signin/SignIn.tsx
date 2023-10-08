@@ -11,10 +11,10 @@ const SignIn: React.FC = () => {
    });
 
    const onChangeHandler = (
-      e: React.ChangeEvent<HTMLInputElement>,
+      value:string,
       data: string
    ) => {
-      setUserData({ ...userData, [data]: e.target.value });
+      setUserData({ ...userData, [data]: value });
    };
 
    return (
@@ -22,31 +22,31 @@ const SignIn: React.FC = () => {
          <Input
             text="Логин"
             value={userData.login}
-            onChange={(e) => {
-               onChangeHandler(e, "login");
+            onChange={(value) => {
+               onChangeHandler(value, "login");
             }}
          />
          <Input
             text="Имя в игре"
             value={userData.nickname ?? ""}
-            onChange={(e) => {
-               onChangeHandler(e, "nickname");
+            onChange={(value) => {
+               onChangeHandler(value, "nickname");
             }}
          />
          <Input
             text="Пароль"
             type="password"
             value={userData.password}
-            onChange={(e) => {
-               onChangeHandler(e, "password");
+            onChange={(value) => {
+               onChangeHandler(value, "password");
             }}
          />
          <Input
-            text="Повторите пароль"
+            text="Повтор пароля"
             type="password"
             value={userData.passwordTwo ?? ""}
-            onChange={(e) => {
-               onChangeHandler(e, "passwordTwo");
+            onChange={(value) => {
+               onChangeHandler(value, "passwordTwo");
             }}
          />
       </div>

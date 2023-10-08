@@ -8,11 +8,8 @@ const Login: React.FC = () => {
       password: "",
    });
 
-   const onChangeHandler = (
-      e: React.ChangeEvent<HTMLInputElement>,
-      data: string
-   ) => {
-      setUserData({ ...userData, [data]: e.target.value });
+   const onChangeHandler = (value: string, data: string) => {
+      setUserData({ ...userData, [data]: value });
    };
 
    return (
@@ -20,16 +17,16 @@ const Login: React.FC = () => {
          <Input
             text="Логин"
             value={userData.login}
-            onChange={(e) => {
-               onChangeHandler(e, "login");
+            onChange={(value) => {
+               onChangeHandler(value, "login");
             }}
          />
          <Input
             text="Пароль"
             type="password"
             value={userData.password}
-            onChange={(e) => {
-               onChangeHandler(e, "password");
+            onChange={(value) => {
+               onChangeHandler(value, "password");
             }}
          />
       </div>

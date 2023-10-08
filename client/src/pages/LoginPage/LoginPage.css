@@ -10,7 +10,7 @@
   height: 20%;
 }
 
-.login_header_button{
+.auth_header_button{
   display: flex;
   align-items: center;
   max-width: 460px;

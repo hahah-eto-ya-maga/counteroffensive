@@ -8,12 +8,12 @@ const LoginPage: React.FC = () => {
       <div className="login_block">
          <div className="login_header">
             <div>
-               <Button appearance="primary" className="login_header_button">
+               <Button appearance="primary" className="auth_header_button">
                   Авторизация
                </Button>
             </div>
             <div>
-               <Button appearance="primary" className="login_header_button">
+               <Button appearance="primary" className="auth_header_button">
                   Вернуться в меню
                </Button>
             </div>
