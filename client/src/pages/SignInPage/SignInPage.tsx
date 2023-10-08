@@ -7,13 +7,15 @@ const SignInPage: React.FC = () => {
     <div className="signin_block">
       <div className="signin_header">
         <div>
-          <Button appearance="primary" className="auth_header_button">Регистрация</Button>
+          <Button appearance="primary-disable" disabled>
+            Регистрация
+          </Button>
         </div>
         <div>
-          <Button appearance="primary" className="auth_header_button">Вернуться в меню</Button>
+          <Button appearance="primary">Вернуться в меню</Button>
         </div>
       </div>
-      <div className="main_auth_content">
+      <div className="main_content">
         <SignIn />
       </div>
       <div className="signin_footer">

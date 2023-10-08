@@ -3,8 +3,7 @@
   font-size: 4vw;
   font-style: normal;
   line-height: normal;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   box-sizing: border-box;
   padding: 10px;
   cursor: pointer;
@@ -23,10 +22,13 @@
   background-color: var(--primary-green-hover);
 }
 
-.menu {
+.primary-disable {
   color: var(--black);
-  border: 1px solid var(--gray-light);
-  background: none;
+  background-color: var(--primary-green);
+}
+
+.menu {
+  background: var(--gradient-menu);
 }
 
 .menu:hover {

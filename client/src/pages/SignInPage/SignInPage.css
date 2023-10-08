@@ -16,3 +16,12 @@
   height: 20%;
 }
 
+.join_button {
+  width: 60vw;
+}
+
+.main_content{
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+}

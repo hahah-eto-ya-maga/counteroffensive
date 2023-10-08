@@ -1,0 +1,18 @@
+.menu-page-wrapper {
+  padding: 30px;
+  height: 90%;
+}
+
+.menu-buttons-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 60%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-btn {
+ width: 35vw;
+ max-height: 200px;
+}

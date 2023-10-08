@@ -7,13 +7,13 @@ export interface ButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  appearance: "primary" | "menu";
+  appearance: "primary" | "menu" | "primary-disable";
 }
 
 const Button = ({
   appearance,
-  children,
   className,
+  children,
   ...props
 }: ButtonProps): JSX.Element => {
   return (
@@ -21,11 +21,11 @@ const Button = ({
       className={cn("button", className, {
         ["primary"]: appearance === "primary",
         ["menu"]: appearance === "menu",
+        ["primary-disable"]: appearance === "primary-disable",
       })}
       {...props}
-    >
-      {children}
-    </button>
+	  
+    >{children}</button>
   );
 };
 
