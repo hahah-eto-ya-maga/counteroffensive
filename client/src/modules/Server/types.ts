@@ -3,9 +3,6 @@ export interface IError {
    text: string;
 }
 
-export interface IUserData {
-   login: string;
-   password: string;
-   nickname?: string;
-   passwordTwo?: string;
+export interface IUserInfo {
+
 }

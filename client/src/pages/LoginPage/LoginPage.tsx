@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Login } from "../../components";
 
 import "./LoginPage.css";
+import { ServerContext } from "../../context";
 
 const LoginPage: React.FC = () => {
   return (

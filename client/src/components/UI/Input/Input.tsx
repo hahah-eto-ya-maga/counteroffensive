@@ -18,17 +18,11 @@ const Input: React.FC<IInputProps> = ({
    type,
    onChange,
 }) => {
-<<<<<<< HEAD
-   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-      onChange(e.target.value);
-   };
-=======
   
    const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
       onChange(e.target.value);
    };
 
->>>>>>> fc795ee1c35b0f3cf382b85c23383a27919025f7
    return (
       <div className="input_box">
          <div className="input_text">
