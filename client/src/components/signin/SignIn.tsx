@@ -10,10 +10,7 @@ const SignIn: React.FC = () => {
       passwordTwo: "",
    });
 
-   const onChangeHandler = (
-      value:string,
-      data: string
-   ) => {
+   const onChangeHandler = (value: string, data: string) => {
       setUserData({ ...userData, [data]: value });
    };
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .input_box {
   display: flex;
   flex-direction: row;
@@ -15,6 +16,8 @@
   background: var(--green-yellow);
 }
 
+=======
+>>>>>>> fc795ee1c35b0f3cf382b85c23383a27919025f7
 .input_value {
   display: flex;
   height: 100%;

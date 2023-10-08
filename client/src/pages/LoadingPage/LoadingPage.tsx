@@ -6,7 +6,7 @@ const LoadingPage: React.FC = () => {
    const [progress, setProgress] = useState<number>(0);
    const advise = "Рандомный совет";
    return (
-      <div className={"logo_page_wrapper"}>
+      <div className="logo_page_wrapper">
          <Logo />
          <CardAdvise advise={advise} />
          <ProgressBar progress={progress} />

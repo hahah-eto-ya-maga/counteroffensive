@@ -10,9 +10,7 @@ const App: React.FC = () => {
    const server = useServer(HOST);
    return (
       <ServerContext.Provider value={server}>
-         <div className="app">
-            <SignInPage/>
-         </div>
+         <div className="app"></div>
       </ServerContext.Provider>
    );
 };

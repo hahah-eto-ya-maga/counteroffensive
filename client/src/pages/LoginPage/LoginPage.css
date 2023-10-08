@@ -25,12 +25,19 @@
 
 .join_button {
   width: 60vw;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
-.main_content{
-  padding-top: 60px;
-  display: flex;
+.main_auth_content{
+  padding-top: 40px;
+	display: flex;
 	flex-direction: column;
 	height: 60%;
+}
+
+.auth_header_button {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  height: 200px;
 }
