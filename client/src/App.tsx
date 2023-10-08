@@ -3,14 +3,15 @@ import { useServer } from "./modules";
 import { HOST } from "./config";
 import { ServerContext } from "./context";
 
-import "./App.css";
+import "./styles/global.css";
 
 const App: React.FC = () => {
    const server = useServer(HOST);
-
    return (
       <ServerContext.Provider value={server}>
-         <div></div>
+         <div className="app">
+
+         </div>
       </ServerContext.Provider>
    );
 };
