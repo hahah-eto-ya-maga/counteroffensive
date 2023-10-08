@@ -1,0 +1,67 @@
+.lobbi_block {
+    padding: 30px;
+    height: 90%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 12%;
+}
+
+.header button {
+    width: 30%;
+}
+
+.lobby {
+    pointer-events: none
+}
+
+.mans {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 4%;
+    height: 25%;
+}
+
+.mans button {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 30%;
+}
+
+.mans .general img {
+    width: 60%;
+    display:block;
+    mix-blend-mode: normal;
+    height: 65%;
+}
+
+.tanks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 4%;
+    height: 40%;
+}
+
+.tanks button {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 48%;
+}
+
+.free {
+    color: #00ff00;
+}
+.selected {
+    color: #ff0000;
+}
