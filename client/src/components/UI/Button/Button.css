@@ -3,7 +3,8 @@
   font-size: 4vw;
   font-style: normal;
   line-height: normal;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
   padding: 10px;
   cursor: pointer;

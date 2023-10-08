@@ -1,6 +1,11 @@
 export interface IError {
-  code: number;
-  text: string;
+   code: number;
+   text: string;
 }
 
-export interface IUserData {}
+export interface IUserData {
+   login: string;
+   password: string;
+   nickname?: string;
+   passwordTwo?: string;
+}

@@ -1,22 +1,36 @@
-.loginblock {
+.login_block {
   padding: 30px;
-  height: calc(100vh - 80px);
+  height: 90%;
 }
 
-.loginheader {
+.login_header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  height: 20%;
 }
 
-.loginfooter {
+.login_footer {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  right: 65px;
-  bottom: 65px;
+  height: 20%;
 }
 
 .join_button {
   width: 60vw;
+  max-width: 900px;
+}
+
+.main_auth_content{
+  padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+}
+
+.auth_header_button {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  height: 200px;
 }

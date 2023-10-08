@@ -1,12 +1,12 @@
 import React from "react";
-import classes from "./CardAdvise.module.css";
+import "./CardAdvise.css";
 
 interface ICardAdviceProps {
-  advise: string;
+   advise: string;
 }
 
 const CardAdvise: React.FC<ICardAdviceProps> = ({ advise }) => {
-  return <div className={classes.card_advise}>{advise}</div>;
+   return <div className={"card_advise"}>{advise}</div>;
 };
 
 export default CardAdvise;

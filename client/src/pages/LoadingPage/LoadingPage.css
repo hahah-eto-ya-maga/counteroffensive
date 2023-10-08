@@ -1,6 +1,7 @@
 .logo_page_wrapper{
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
     justify-content: space-between;
     align-items: center;
     width: 80%;

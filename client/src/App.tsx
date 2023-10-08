@@ -5,13 +5,12 @@ import { HOST } from "./config";
 import "./styles/global.css";
 
 const App: React.FC = () => {
-  const server = useServer(HOST);
-  return (
-    <ServerContext.Provider value={server}>
-      <div className="app">
-      </div>
-    </ServerContext.Provider>
-  );
+   const server = useServer(HOST);
+   return (
+      <ServerContext.Provider value={server}>
+         <div className="app"></div>
+      </ServerContext.Provider>
+   );
 };
 
 export default App;
