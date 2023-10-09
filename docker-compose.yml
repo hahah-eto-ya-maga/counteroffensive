@@ -44,7 +44,7 @@ services:
     networks:
       - general
 
-  web_server:
+  nginx:
     image: nginx:latest
     restart: always
     volumes:
