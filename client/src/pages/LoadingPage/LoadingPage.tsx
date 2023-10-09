@@ -5,11 +5,11 @@ import "./LoadingPage.css";
 
 const LoadingPage: React.FC = () => {
    const [progress, setProgress] = useState<number>(0);
-   const advise = "Рандомный совет";
+   const advice = "Рандомный совет";
    return (
-      <div className='logo_page_wrapper'>
+      <div className="logo_page_wrapper">
          <Logo />
-         <CardAdvise advise={advise} />
+         <CardAdvise advice={advice} />
          <ProgressBar progress={progress} />
       </div>
    );

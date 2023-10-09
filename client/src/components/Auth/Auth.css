@@ -1,0 +1,23 @@
+.auth_wrapper {
+   padding: 30px;
+   height: 90%;
+   width: 100%;
+}
+
+.auth_content {
+   display: flex;
+   flex-direction: column;
+   height: 60%;
+}
+
+.auth_footer {
+   display: flex;
+   justify-content: flex-end;
+   height: 20%;
+}
+
+.auth_join_button {
+   width: 60vw;
+   height: 120px;
+   max-width: 1000px;
+}

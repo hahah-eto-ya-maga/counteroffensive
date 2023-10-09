@@ -8,7 +8,8 @@ const App: React.FC = () => {
    const server = useServer(HOST);
    return (
       <ServerContext.Provider value={server}>
-         <div className="app"></div>
+         <div className="app">
+         </div>
       </ServerContext.Provider>
    );
 };
