@@ -22,7 +22,10 @@ services:
     volumes:
       - "./server:/var/www/html"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of fb60db2 ([ADD] Добавил файл default.jpg)
     environment:
       - "MYSQL_USER=${MYSQL_USER:-admin}"
       - "MYSQL_PASSWORD=${MYSQL_PASSWORD:-b446b342-608c-11ee-8c99-0242ac120002}"
