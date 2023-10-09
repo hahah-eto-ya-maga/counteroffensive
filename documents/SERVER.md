@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Документ с информацией о работе с PHP сервером (API)
 ## Оглавление
@@ -86,3 +87,5 @@ docker compose logs api --tail 100 -f
 =======
 ![Пример вывода в консоль](images/cmd-logs-example.jpg)
 >>>>>>> parent of f108ee5 ([FIX] Закончил написание SERVER.md)
+=======
+>>>>>>> parent of 5e7afb0 ([ADD] Добавил SERVER.md)
