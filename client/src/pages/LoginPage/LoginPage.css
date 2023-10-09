@@ -1,6 +1,7 @@
 .loginblock {
   padding: 30px;
   height: calc(100vh - 80px);
+  border: 10px solid var(--yellow);
 }
 
 .loginheader {
