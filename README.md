@@ -98,6 +98,7 @@ docker compose stop
 
 ## Использование проекта (информация по каждому контейнеру находится в папке documents. В скобочках файл с инструкцией)
 Проект содержит 5 конейтеров:
+<<<<<<< HEAD
 1. database - База данных - MySQL ([DB.md](./documents/DB.md))
 2. api - PHP server ([SERVER.md](./documents/SERVER.md), [API.md](./server/API.md))
 3. client - React приложение ([CLIENT.md](./documents/CLIENT.md))
@@ -113,3 +114,10 @@ docker compose stop
 =======
 5. web_server - Nginx ([WEBSERVER.md](./documents/WEBSERVER.md))
 >>>>>>> parent of 5e7afb0 ([ADD] Добавил SERVER.md)
+=======
+1. database - База данных - MySQL (DB.md)
+2. api - PHP server (SERVER.md, API.md)
+3. client - React приложение (CLIENT.md)
+4. phpmyadmin - PMA - Клиент для работы с БД (PMA.md)
+5. web_server - Nginx (WEBSERVER.md)
+>>>>>>> parent of ab35341 ([FIX] Добавил ссылки в файле README.md)
