@@ -48,10 +48,14 @@ services:
 
   phpmyadmin:
 <<<<<<< HEAD
+<<<<<<< HEAD
     image: phpmyadmin
 =======
     image: phpmyadmin:latest
 >>>>>>> parent of 2929276 ([FIX] Дописал документацию. Осталось только WEBSERVER.md)
+=======
+    image: phpmyadmin
+>>>>>>> parent of f108ee5 ([FIX] Закончил написание SERVER.md)
     restart: always
     ports:
       - "${PMA_EXTERNAL_PORT:-8081}:80"
