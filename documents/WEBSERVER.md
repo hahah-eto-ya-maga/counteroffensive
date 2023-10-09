@@ -1,3 +1,0 @@
-# Web server Nginx
-
-## Применение
