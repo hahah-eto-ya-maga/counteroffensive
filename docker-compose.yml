@@ -21,6 +21,15 @@ services:
     restart: always
     volumes:
       - "./server:/var/www/html"
+<<<<<<< HEAD
+=======
+    environment:
+      - "MYSQL_USER=${MYSQL_USER:-admin}"
+      - "MYSQL_PASSWORD=${MYSQL_PASSWORD:-b446b342-608c-11ee-8c99-0242ac120002}"
+      - "MYSQL_HOST=database"
+      - "MYSQL_PORT=3306"
+      - "MYSQL_DATABASE=${MYSQL_DATABASE:-contrnastup}"
+>>>>>>> parent of fb60db2 ([ADD] Добавил файл default.jpg)
     ports:
       - "${API_EXTERNAL_PORT:-8080}:8080"
     networks:
