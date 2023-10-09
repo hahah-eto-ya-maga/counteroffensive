@@ -3,9 +3,4 @@ export interface IError {
   text: string;
 }
 
-export interface IUserData {
-  login: string;
-  password: string;
-  passwordTwo?: string;
-};
-
+export interface IUserData {}

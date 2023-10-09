@@ -1,27 +1,22 @@
-.login_block {
+.loginblock {
   padding: 30px;
-  height: 90%;
+  height: calc(100vh - 80px);
 }
 
-.login_header {
+.loginheader {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  height: 20%;
 }
 
-.login_footer {
+.loginfooter {
   display: flex;
   justify-content: flex-end;
-  height: 20%;
+  position: absolute;
+  right: 65px;
+  bottom: 65px;
 }
 
 .join_button {
   width: 60vw;
-}
-
-.main_content{
-	display: flex;
-	flex-direction: column;
-	height: 60%;
 }

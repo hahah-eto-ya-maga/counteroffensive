@@ -4,20 +4,14 @@ import "./LoginPage.css";
 
 const LoginPage: React.FC = () => {
   return (
-    <div className="login_block">
-      <div className="login_header">
-        <div>
+    <div>
+      <div className="loginblock">
+        <div className="loginheader">
           <Button appearance="primary">Авторизация</Button>
-        </div>
-        <div>
           <Button appearance="primary">Вернуться в меню</Button>
         </div>
-      </div>
-      <div className="main_content">
-        <Login />
-      </div>
-      <div className="login_footer">
-        <div>
+        <Login></Login>
+        <div className="loginfooter">
           <Button className="join_button" appearance="primary">
             Войти в Бахмут
           </Button>
