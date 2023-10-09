@@ -23,6 +23,7 @@ services:
       - "./server:/var/www/html"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of fb60db2 ([ADD] Добавил файл default.jpg)
@@ -33,6 +34,8 @@ services:
       - "MYSQL_PORT=3306"
       - "MYSQL_DATABASE=${MYSQL_DATABASE:-contrnastup}"
 >>>>>>> parent of fb60db2 ([ADD] Добавил файл default.jpg)
+=======
+>>>>>>> parent of 1b8bfd5 ([ADD] Начал писать документацию к БД DB.md)
     ports:
       - "${API_EXTERNAL_PORT:-8080}:8080"
     networks:
