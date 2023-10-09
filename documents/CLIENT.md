@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 # Документ с информацией о клиенте
+=======
+# Информацией о клиенте
+
+<a name="docker-desktop"></a>
+## Docker Desktop
+Контейнер называется **client** (*counteroffensive-client*)
+
+>>>>>>> parent of 2929276 ([FIX] Дописал документацию. Осталось только WEBSERVER.md)
 ## Запуск
 <<<<<<< HEAD
 В контейнере client 

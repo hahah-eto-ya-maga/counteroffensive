@@ -44,7 +44,11 @@ services:
       - "./client:/code"
 
   phpmyadmin:
+<<<<<<< HEAD
     image: phpmyadmin
+=======
+    image: phpmyadmin:latest
+>>>>>>> parent of 2929276 ([FIX] Дописал документацию. Осталось только WEBSERVER.md)
     restart: always
     ports:
       - "${PMA_EXTERNAL_PORT:-8081}:80"
