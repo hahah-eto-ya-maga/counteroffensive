@@ -25,13 +25,10 @@
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 4%;
-    height: 25%;
+    max-height: 25%;
 }
 
 .mans button {
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
     width: 30%;
 }
 
