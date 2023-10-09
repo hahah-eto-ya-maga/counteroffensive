@@ -1,53 +1,68 @@
-# Иинформациея о PHP сервере (API)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# Документ с информацией о работе с PHP сервером (API)
 ## Оглавление
 + [Docker Desktop](#docker-desktop)
 + [Запуск](#start)
 + [Подключение через браузер](#browser-connection)
 + [Разработка](#dev)
++ [Просмотр логов](#logs-view)
 + [Дополинтельные действия с контейнером](#other-moves)
 	+ [Перезапуск](#restart)
 	+ [Остановка](#stop)
-	+ [Просмотр логов](#logs-view)
 <a name="docker-desktop"></a>
 ## Docker Desktop
 Контейнер называется **api** (*counteroffensive-api*)
-
-<a name="browser-connection"></a>
-## Подключение через браузер
-+ <a href="http://localhost/api/" target="_blank">http://localhost/api/</a>(Подключение через Nginx)
-+ <a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a>(Подключение напрямую)
-Пример в браузере
-![Пример подключения к API через браузер](images/server/browser-api-connect-example.jpg)
-
-<a name="dev"></a>
+<a name="start"></a>
+=======
+# Документ с информацией о контейнере с PHP сервером
+>>>>>>> parent of f108ee5 ([FIX] Закончил написание SERVER.md)
+## Запуск
+Этот контейнер запускается вместе со всеми контейнерами и не требует перезапуска для обновления кода
+## Подлючение через браузер
+1. [http://localhost/api/](http://localhost/api/) (Поключение с через Nginx)
+2. [http://localhost:8080/](http://localhost:8080/)
 ## Разработка
-+ Вся разработка ведётся в папке **server**. Это общая папка с контейнером. 
-+ Запускаемые скрипты находятся в папке **server/public/**
-+ Модели данный из БД находятся в папке **server/models/**
-+ Файл с переменными окружения и другими конфигурационными данными находится в папке **server/config/**
-+ Все библиотеки находятся в папке **server/libs/**. Внутренние библиотеки находятся в папке **server/libs/inside/**. Внешние библиотеки находятся в папке **server/libs/outside/**
-
+1. Вся разработка ведётся в папке **server**. Это общая папка с контейнером. 
+2. Запускаемые скрипты находятся в папке **server/public/**
+3. Модели данный из БД находятся в папке **server/models/**
+4. Файл с переменными окружения и другими конфигурационными данными находится в папке **server/config/**
+5. Все библиотеки находятся в папке **server/libs/**. Внутренние библиотеки находятся в папке **server/libs/inside/**. Внешние библиотеки находятся в папке **server/libs/outside/**
+## Просмотр логов
+1. Через команду (Вывод последних 100 строк вывода (*--tail 100*) и нахождение в выводе (*-f*))
+```bash
+docker compose logs api --tail 100 -f
+```
+<<<<<<< HEAD
+Пример вывода в терминал только что запущенного контейнера
+![Пример вывода в терминал](images/api/cmd-logs-example.jpg)
+Пример вывода в терминал с несколькими сделанными запросами
+![Пример вывода в терминал](images/api/cmd-logs-example2.jpg)
++ Пример вывода в Docker Desktop 
+![Пример вывода в Docker Desktop](images/api/docker-desktop-logs-example.jpg)
 <a name="other-moves"></a>
 ## Дополнительные действия с контейнером
-
 <a name="restart"></a>
 + Перезапуск
 Через терминал
 ```bash
 docker compose restart api
 ```
-![Пример перезапуска контейнера через терминал](images/server/cmd-container-restart-example.jpg)
+![Пример перезапуска контейнера через терминал](images/api/cmd-container-restart-example.jpg)
 Через Docker Desktop (Выделенная кнопка)
-![Пример перезапуска контейнера через Docker Desktop](images/server/docker-desktop-restart-container-example.jpg)
-
+![Пример перезапуска контейнера через Docker Desktop](images/api/docker-desktop-restart-container-example.jpg)
 <a name="stop"></a>
 + Остановка
 Через терминал
 ```bash
 docker compose stop api
 ```
-![Пример остановки контейнера через терминал](images/server/cmd-container-stop-example.jpg)
+![Пример остановки контейнера через терминал](images/api/cmd-container-stop-example.jpg)
 Через Docker Desktop (Выделенная кнопка)
+<<<<<<< HEAD
+<<<<<<< HEAD
 ![Пример остановки контейнера через Docker Desktop](images/server/docker-desktop-stop-container-example.jpg)
 
 <a name="logs-view"></a>
@@ -62,3 +77,15 @@ docker compose logs api --tail 100 -f
 ![Пример вывода в терминал](images/server/cmd-logs-example2.jpg)
 + Пример вывода в Docker Desktop 
 ![Пример вывода в Docker Desktop](images/server/docker-desktop-logs-example.jpg)
+>>>>>>> parent of 1b8bfd5 ([ADD] Начал писать документацию к БД DB.md)
+=======
+![Пример остановки контейнера через Docker Desktop](images/server/docker-desktop-stop-container-example.jpg)
+>>>>>>> parent of 17b72fc ([ADD] Написал документацию к клиенту CLIENT.md)
+=======
+![Пример остановки контейнера через Docker Desktop](images/api/docker-desktop-stop-container-example.jpg)
+>>>>>>> parent of bc4391a ([FIX] Закончил составление README.md)
+=======
+![Пример вывода в консоль](images/cmd-logs-example.jpg)
+>>>>>>> parent of f108ee5 ([FIX] Закончил написание SERVER.md)
+=======
+>>>>>>> parent of 5e7afb0 ([ADD] Добавил SERVER.md)
