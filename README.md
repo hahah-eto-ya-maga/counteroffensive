@@ -14,18 +14,28 @@
 
 <a name="required-programs"></a>
 ## Требуемые программы
-[Docker](https://docs.docker.com/desktop/install/windows-install/) и дополнение Docker Compose
+* [Docker](https://docs.docker.com/desktop/install/windows-install/) и дополнение Docker Compose (на Windows идёт из коробки)
+* [NodeJS](https://nodejs.org/en/download)
 
 <a name="start"></a>
 ## Запуск проекта
 Все команды нужно запускать в терминале в корневой папке проекта и при запущенном Docker Desktop
 
 <a name="build"></a>
-## Сборка (Терминал)
+## Сборка (Терминал из корневой папки)
+* Сборка клиента
+```bash
+cd client
+npm install
+npm run build
+cd ..
+```
+* Сборка проекта в Docker
 ```bash
 docker compose build
 ```
 ![Пример сборки проекта](documents/images/readme/cmd-build-example.jpg)
+
 
 <a name="up"></a>
 ## Запуск собранного проекта
@@ -72,9 +82,8 @@ docker compose logs --tail 20 -f
 Проект содержит 5 конейтеров:
 1. database - База данных - MySQL ([DB.md](./documents/DB.md))
 2. api - PHP server ([SERVER.md](./documents/SERVER.md), [API.md](./server/API.md))
-3. client - React приложение ([CLIENT.md](./documents/CLIENT.md))
-4. phpmyadmin - PMA - Клиент для работы с БД ([PMA.md](./documents/PMA.md))
-5. web_server - Nginx ([WEBSERVER.md](./documents/WEBSERVER.md))
+3. phpmyadmin - PMA - Клиент для работы с БД ([PMA.md](./documents/PMA.md))
+4. web_server - Nginx ([WEBSERVER.md](./documents/WEBSERVER.md))
 
 <a name="inside-links"></a>
 ## Полезные ссылки внутри проекта:
