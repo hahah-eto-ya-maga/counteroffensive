@@ -1,4 +1,5 @@
-import { IError, IUserInfo } from "./types";
+import md5 from "md5";
+import { IError } from "./types";
 
 export default class Server {
    HOST: string;
@@ -13,15 +14,19 @@ export default class Server {
    ): Promise<T | IError> {
       if (method) {
          try {
+            const url = `${this.HOST}/${method}`;
             const options: RequestInit = {
                method: "POST",
                headers: {
-                  "Content-Type": "application/json;charset=utf-8",
+                  "Content-Type": "application/json",
+                  // Authorization: params.token ?? "", Хедер авторизации, в котором отправляется token. пока вопрос к беку
                },
+
                body: JSON.stringify(params),
-               mode: "cors",
+               mode: "cors", // Кросдоменные запросы
             };
-            const res = await fetch(this.HOST, options);
+
+            const res = await fetch(url, options);
             const answer = await res.json();
             if (answer.result === "ok") {
                return answer.data as T;
@@ -40,15 +45,22 @@ export default class Server {
       };
    }
 
-   login(login: string, password: string): Promise<IUserInfo | IError> {
-      return this.request<IUserInfo>("login", { login, password });
+   login(login: string, password: string): Promise<string | IError> {
+      const rnd = Math.random().toString();
+      const hash = md5(md5(login + password) + rnd);
+      return this.request("login", { login, hash, rnd });
    }
 
-   logout(login: string): Promise<IUserInfo | IError> {
-      return this.request<IUserInfo>("logout", { login });
+   logout(token: string): Promise<string | IError> {
+      return this.request("logout", { token });
    }
 
-   signin(token: string): Promise<string | IError> {
-      return this.request<string>("signin", { token });
+   signin(
+      nickname: string,
+      login: string,
+      password: string
+   ): Promise<string | IError> {
+      const hash = md5(login + password);
+      return this.request<string>("signin", { nickname, login, hash });
    }
 }
