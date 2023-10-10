@@ -1,6 +1,6 @@
 import LoadingPage from "./LoadingPage/LoadingPage";
-import LoginPage from "./LoginPage/LoginPage";
-import SignInPage from "./SignInPage/SignInPage";
+import SignInPage from "./Auth/SignInPage/SignInPage";
+import LoginPage from "./Auth/LoginPage/LoginPage";
 import MenuPage from "./MenuPage/MenuPage";
 
-export { LoginPage, SignInPage, LoadingPage, MenuPage };
+export { LoadingPage, SignInPage, LoginPage, MenuPage };

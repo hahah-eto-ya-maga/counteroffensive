@@ -2,7 +2,7 @@ import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
 import cn from "classnames";
 import "./P.css";
 
-export interface PProps
+interface PProps
   extends DetailedHTMLProps<
     HTMLAttributes<HTMLParagraphElement>,
     HTMLParagraphElement
@@ -11,17 +11,12 @@ export interface PProps
   children: ReactNode;
 }
 
-const P = ({
-  size = "l",
-  children,
-  className,
-  ...props
-}: PProps): JSX.Element => {
+const P: React.FC<PProps> = ({ size, children, className, ...props }) => {
   return (
     <p
-      className={cn("p", className, {
-        ["s"]: size == "s",
-        ["l"]: size == "l",
+      className={cn('p', className, {
+        ['s']: size == "s",
+        ['l']: size == "l",
       })}
       {...props}
     >

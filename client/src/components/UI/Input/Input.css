@@ -24,7 +24,6 @@
 .input_box {
   display: flex;
   flex-direction: row;
-  width: 80vw;
   height: 5vw;
   margin: 10px 0;
 }

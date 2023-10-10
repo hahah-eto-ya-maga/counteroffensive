@@ -1,53 +1,58 @@
 import React, { useState } from "react";
-import { IUserData } from "../../modules/Server/types";
-import { Input } from "../UI";
+import { Button, Input } from "../UI";
+import { IUserData } from "../../interfaces";
 
 const SignIn: React.FC = () => {
-   const [userData, setUserData] = useState<IUserData>({
-      login: "",
-      password: "",
-      nickname: "",
-      passwordTwo: "",
-   });
+  const [userData, setUserData] = useState<IUserData>({
+    login: "",
+    password: "",
+    passwordTwo: "",
+  });
 
-   const onChangeHandler = (value: string, data: string) => {
-      setUserData({ ...userData, [data]: value });
-   };
+  const onChangeHandler = (value: string, data: string) => {
+    setUserData({ ...userData, [data]: value });
+  };
 
-   return (
-      <div>
-         <Input
+  const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {};
+
+  return (
+    <form className="auth_form" onSubmit={onSubmitHandler}>
+      
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <Input
             text="Логин"
             value={userData.login}
             onChange={(value) => {
-               onChangeHandler(value, "login");
+              onChangeHandler(value, "login");
             }}
-         />
-         <Input
-            text="Имя в игре"
-            value={userData.nickname ?? ""}
-            onChange={(value) => {
-               onChangeHandler(value, "nickname");
-            }}
-         />
-         <Input
+          />
+          <Input
             text="Пароль"
             type="password"
             value={userData.password}
             onChange={(value) => {
-               onChangeHandler(value, "password");
+              onChangeHandler(value, "password");
             }}
-         />
-         <Input
+          />
+          <Input
             text="Повтор пароля"
             type="password"
             value={userData.passwordTwo ?? ""}
             onChange={(value) => {
-               onChangeHandler(value, "passwordTwo");
+              onChangeHandler(value, "passwordTwo");
             }}
-         />
+          />
+        </div>
+        {/* <div>ТУТ ОШИБКИ МОЖНО ЗАКИНУТЬ ЕСЛИ НАСТРОИТЬ КСС ку</div> */}
       </div>
-   );
+      <div className="auth_footer">
+        <Button appearance="primary" className="auth_submit_button">
+          Попасть в списки военных
+        </Button>
+      </div>
+    </form>
+  );
 };
 
 export default SignIn;

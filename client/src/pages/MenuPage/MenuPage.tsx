@@ -3,18 +3,18 @@ import "./MenuPage.css";
 
 const MenuPage: React.FC = () => {
   return (
-    <div className="menu-page-wrapper">
+    <div className="menu_page_wrapper">
       <Logo />
-      <div className="menu-buttons-block">
-        <Button appearance="menu" className="menu-btn">
+      <div className="menu_buttons_block">
+        <Button appearance="menu" className="menu_btn">
           <P size="l">Уже служу</P>
           <P size="s">Авторизоваться</P>
         </Button>
-        <Button appearance="menu" className="menu-btn">
+        <Button appearance="menu" className="menu_btn">
           <P size="l">Повестка пришла</P>
           <P size="s">Зарегестрироваться</P>
         </Button>
-        <Button appearance="menu" className="menu-btn">
+        <Button appearance="menu" className="menu_btn">
           <P size="l">Дембельнуться</P>
           <P size="s">Выйти из игры</P>
         </Button>

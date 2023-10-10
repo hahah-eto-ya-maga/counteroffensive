@@ -7,25 +7,26 @@ export interface ButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  appearance: "primary" | "menu" | "primary-disable";
+  appearance: "primary" | "menu" | "primary_disable";
 }
 
-const Button = ({
+const Button: React.FC<ButtonProps> = ({
   appearance,
   className,
   children,
   ...props
-}: ButtonProps): JSX.Element => {
+}) => {
   return (
     <button
       className={cn("button", className, {
         ["primary"]: appearance === "primary",
         ["menu"]: appearance === "menu",
-        ["primary-disable"]: appearance === "primary-disable",
+        ["primary_disable"]: appearance === "primary_disable",
       })}
       {...props}
-	  
-    >{children}</button>
+    >
+      {children}
+    </button>
   );
 };
 
