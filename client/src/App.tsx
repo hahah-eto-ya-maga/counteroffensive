@@ -11,6 +11,7 @@ const App: React.FC = () => {
   return (
     <ServerContext.Provider value={server}>
       <div>
+        <LobbiPage/>
       </div>
     </ServerContext.Provider>
   );

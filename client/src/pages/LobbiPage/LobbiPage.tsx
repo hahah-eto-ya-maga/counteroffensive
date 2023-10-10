@@ -1,14 +1,13 @@
 import React from "react"
 import { Button } from "../../components"
 import { useState } from "react";
-import { automat, RPG, general, tank2, tank3 } from "./images"; 
+import { automat, RPG, tank2, tank3 } from "./images"; 
 import cn from "classnames";
 import "./LobbiPage.css";
+import { General, FlagBearer } from "../../components/lobbi";
 
 const LobbiPage: React.FC = () => {
-    const [statusGeneral, setStatusGeneral] = useState(false);
-    const changeStatusGeneral = () => setStatusGeneral(!statusGeneral)
-
+    
     return(
         <div className="lobbi_block">
 
@@ -18,16 +17,14 @@ const LobbiPage: React.FC = () => {
                 <Button className="menu_button" appearance="primary" onClick={() => {}}> Меню </Button>
             </div>
 
-            <div className="mans">
-                <Button className="automat" appearance="image" onClick={() => {}}> Пехотинец-<br/>автоматчик <img src={automat} alt="Automat" /></Button>
-                <Button className="RPG"appearance="image"  onClick={() => {}}> Пехотинец с <br/>гранатомётом <img src={RPG} alt="RPG" /></Button>
+            <div className="single_rank">
+                <FlagBearer/>
+                <General/>
+            </div>
 
-                <Button className="general" appearance="image" onClick={() => {changeStatusGeneral()}}> Генерал {'('}
-                    <span className={cn("status", {
-                        ["free"]: !statusGeneral,
-                        ["selected"]: statusGeneral,
-                    })}>{statusGeneral ? "Занято" : "Свободно"}</span>{')'}
-                    <img src={general} alt="General" /></Button>
+            <div className="mans">
+                <Button className="RPG"appearance="image"  onClick={() => {}}>Пехотинец с гранатомётом<img src={RPG} alt="RPG" /></Button>
+                <Button className="automat" appearance="image" onClick={() => {}}> Пехотинец-автоматчик <img src={automat} alt="Automat" /></Button>
             </div>
                 
             <div className="tanks">
