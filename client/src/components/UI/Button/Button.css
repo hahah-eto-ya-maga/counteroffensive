@@ -25,6 +25,7 @@
 .primary_disable {
   color: var(--black);
   background-color: var(--primary-green);
+  cursor: default;
 }
 
 .menu {
