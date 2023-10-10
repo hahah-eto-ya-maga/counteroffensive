@@ -12,29 +12,31 @@ const Login: React.FC = () => {
     setUserData({ ...userData, [data]: value });
   };
 
-  const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
-  };
+  const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {};
 
   return (
     <form className="auth_form" onSubmit={onSubmitHandler}>
-      <div>
-        <Input
-          text="Логин"
-          value={userData.login}
-          onChange={(value) => {
-            onChangeHandler(value, "login");
-          }}
-        />
-        <Input
-          text="Пароль"
-          type="password"
-          value={userData.password}
-          onChange={(value) => {
-            onChangeHandler(value, "password");
-          }}
-        />
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <Input
+            text="Логин"
+            value={userData.login}
+            onChange={(value) => {
+              onChangeHandler(value, "login");
+            }}
+          />
+          <Input
+            text="Пароль"
+            type="password"
+            value={userData.password}
+            onChange={(value) => {
+              onChangeHandler(value, "password");
+            }}
+          />
+        </div>
+      {/*   <div>ТУТ ОШИБКИ МОЖНО ЗАКИНУТЬ ЕСЛИ НАСТРОИТЬ КСС ку</div> */}
       </div>
-      <div className='auth_footer'>
+      <div className="auth_footer">
         <Button appearance="primary" className="auth_submit_button">
           Войти в Бахмут
         </Button>

@@ -1,0 +1,23 @@
+.menu_page_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  height: 90%;
+}
+
+.menu_buttons_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 60%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu_btn {
+  padding: 5px;
+  width: 35vw;
+  max-height: 200px;
+}
