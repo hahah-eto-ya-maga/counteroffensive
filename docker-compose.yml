@@ -20,9 +20,7 @@ services:
     build: ./server
     restart: always
     volumes:
-      - "./server/libs:/var/www/html/libs"
-      - "./server/public:/var/www/html/public"
-      - "./server/db_files:/var/www/html/db_files"
+      - "./server:/var/www/html"
     environment:
       - "MYSQL_USER=${MYSQL_USER:-admin}"
       - "MYSQL_PASSWORD=${MYSQL_PASSWORD:-b446b342-608c-11ee-8c99-0242ac120002}"
@@ -53,7 +51,6 @@ services:
     restart: always
     volumes:
       - "./client/build/:/etc/nginx/src/"
-      - "./server/db_files:/etc/nginx/db_files"
       - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
       - "./nginx/mime.type:/etc/nginx/mime.type"
     ports:
